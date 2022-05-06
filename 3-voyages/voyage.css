@@ -1,0 +1,95 @@
+*{
+    margin:0;
+    padding: 0;
+    list-style: none;
+}
+body{
+    background-color: rgb(237, 242, 254);
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+h2{
+    font-size: 60px;
+    font-family: 'Inter', sans-serif;
+    text-align: center;
+}
+/*nav*/
+#page{
+    padding-top: 30px;
+    height: 150px;
+    color: rgb(178, 18, 162);
+}
+ 
+#page ul{
+    display: flex;
+    justify-content: center;
+    font-family: 'Inter', sans-serif;
+    font-size: 25px;
+
+}
+#page ul li{
+    margin: 0px 20px 0 0px;
+}
+#page a:hover{
+    color: red;
+    font-style:italic;
+}
+label, #toggle
+{
+    display: none;
+}
+/*page3*/
+.voyage, h2{
+    margin-bottom: 40px;
+}
+.voyage, p{
+    font-size: 40px;
+    -webkit-text-stroke: rgb(157, 199, 18) 1px;
+    font-family: 'Inter', sans-serif;
+    text-align: center;
+}
+#destination{
+    margin-top: 50px;
+    width: 100%;
+    display: flex;
+}
+.farodiv{
+    width: 100%;
+}
+.faro1{
+    border-radius: 90%;
+    border: 2px solid black;
+    height: 500px;
+    width: 90%;
+}
+.majdiv{
+    width: 100%;
+}
+.maj1{
+    border-radius: 90%;
+    border: 2px solid black;
+    height: 500px;
+    width: 90%;
+}
+.newdiv{
+    width: 100%;
+}
+.new1{
+    border-radius: 90%;
+    border: 2px solid black;
+    height: 500px;
+    width: 90%;
+}
+.voirdiv{
+    width: 100%;
+    
+}
+.voir1{
+    border-radius: 90%;
+    border: 2px solid black;
+    height: 500px;
+    width: 90%;
+}

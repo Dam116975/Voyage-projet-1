@@ -1,0 +1,145 @@
+*{
+    margin:0;
+    padding: 0;
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+h2{
+    font-size: 60px;
+    font-family: 'Inter', sans-serif;
+    text-align: center;
+}
+/*nav*/
+#page{
+    padding-top: 30px;
+    height: 150px;
+    color: rgb(178, 18, 162);
+}
+ 
+#page ul{
+    display: flex;
+    justify-content: center;
+    font-family: 'Inter', sans-serif;
+    font-size: 25px;
+
+}
+#page ul li{
+    margin: 0px 20px 0 0px;
+}
+#page a:hover{
+    color: red;
+    font-style:italic;
+}
+label, #toggle
+{
+    display: none;
+}
+/*qui sommes nous*/
+.nous{
+    width: 100%;
+    height: 915px;
+    background-color: rgb(237, 242, 254);
+}
+/*titre*/
+.nous p{
+    font-size: 40px;
+    -webkit-text-stroke: rgb(157, 199, 18) 1px;
+    font-family: 'Inter', sans-serif;
+    text-align: center;
+    width: 100%;
+    line-height: 100px;
+    margin-top: 100px;
+}
+
+/*nous connaitre*/
+.titre2{
+    margin-top: 50px;
+    justify-content: center;
+    font-size: 30px;
+}
+.nous{
+    height:0;
+}
+.nous p{
+    margin-top:25px;
+    line-height: 2.4;
+    color: blue;
+    font-size: 20px;
+}
+/*page4
+.post-cont{
+    width: 100%;
+    margin: 0;
+}
+.post{
+    visibility: hidden;
+}
+.timbre{
+visibility: hidden;
+}
+.essaie{
+width: 100%;
+display: flex;
+flex-direction: column;
+justify-content: center;
+}
+.name-c{
+width: 100%;
+height: 30px;
+margin-left: 0;
+margin-top: 0;
+}
+.mailc{
+width: 177px;
+height: 30px;
+margin-left: 0;
+margin-top: 0;
+}
+textarea{
+width: 310px;
+height: 250px;
+margin-left: 0;
+margin-top: 0;
+}
+
+}
+
+@media all and (max-width: 1407px){
+/*page4
+.page4{}
+
+.contact{
+    margin: 0;
+    background-color: black;
+    width: 100%;
+    height: 740px;
+}
+.post{
+    visibility: hidden;
+}
+.gridForm{
+    margin: 0;
+}
+}
+
+@media all and (min-width: 1544px){
+#burg{
+    visibility: hidden;
+}
+}
+
+
+
+/*@media all and (min-height: 800px){
+.grid{
+    width: 100%;
+    height: 1453px;
+}
+}*/ 
+
+
+
