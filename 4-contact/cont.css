@@ -16,12 +16,13 @@ h2{
     font-family: 'Inter', sans-serif;
     text-align: center;
     color: black;
+    margin-bottom: 20px;
 
 }
 /*nav*/
 #page{
     padding-top: 30px;
-    height: 150px;
+    height: 70px;
     color: rgb(178, 18, 162);
 }
  
@@ -115,6 +116,10 @@ textarea{
     transform: translate(-50%, -50%);
     height: 25%;
     width: 16%;
+}
+.info{
+    margin-top: 5000px;
+    color: black;
 }
 /*mediaQ*/
 
