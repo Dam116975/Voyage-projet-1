@@ -42,6 +42,9 @@ label, #toggle
     display: none;
 }
 /*page3*/
+.voyage{
+    margin-top: -60px;
+}
 .voyage, h2{
     margin-bottom: 40px;
 }
