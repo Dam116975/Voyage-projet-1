@@ -2,21 +2,18 @@
     margin:0;
     padding: 0;
     list-style: none;
+    background-color: rgb(237, 242, 254);
 }
 a{
     text-decoration: none;
     color: inherit;
 }
 
-h2{
-    font-size: 60px;
-    font-family: 'Inter', sans-serif;
-    text-align: center;
-}
+
 /*nav*/
 #page{
     padding-top: 30px;
-    height: 150px;
+    height: 100px;
     color: rgb(178, 18, 162);
 }
  
@@ -28,7 +25,7 @@ h2{
 
 }
 #page ul li{
-    margin: 0px 20px 0 0px;
+    margin: 0px 10px 0 0px;
 }
 #page a:hover{
     color: red;
@@ -38,28 +35,153 @@ label, #toggle
 {
     display: none;
 }
-
-
 /*page 4*/
-.contact p{
-    font-size: 40px;
+.contact{
+    width: 100%;
+}
+.contact, h2{
+    font-size: 60px;
+    font-family: 'Inter', sans-serif;
+    text-align: center;
+    margin-top: -20px;
+}
+p{
+    margin-top: 0px;
+    font-size: 35px;
     -webkit-text-stroke: rgb(157, 199, 18) 1px;
     font-family: 'Inter', sans-serif;
     text-align: center;
 }
-/*.post-cont{
-    width: 100%;
-}
+
 .cassB{
-    width: 100%;
+    width: 40%;
     z-index: -5;
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 70% 50% 40% 1% 50%;
+    grid-template-rows: 50% 50%;    
 }
 .post{
-    width: 40%;
+    
+    width: 50%;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
 }
+.taille{
+    width: 100%;
+   
 }
-.timbre{
-    margin-top: -500px;
+.form_buttons{
+    position: absolute;
+    top: 40%;
+    left: 55%;
+    transform: translate(-50%, -50%);
+    width: 15%;
+    height: 50%;
+    opacity: 1%;
+}
+.btn{
+    height: 95%;
+    width: 200%;
+}
+    /*opacity: 1%;*/
+
+
+.name-c{
+    position: absolute;
+    top: 68%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+    height: 4%;
+    width: 20%;
+}
+.mailc{
+    position: absolute;
+    top: 79%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+    height: 4%;
+    width: 20%;
+}
+textarea{
+    position: absolute;
+    top: 67%;
+    left: 37%;
+    transform: translate(-50%, -50%);
+    height: 25%;
+    width: 16%;
+}
+/*mediaQ*/
+
+@media all and (max-width: 1450px){
+    #page{
+        margin: 0;
+        height: 60px;
+
+    }
+    #page ul{
+        display: none;
+        height: 220px;
+    }
+.contact, h2{
+    font-size: 200px;
+}
+    label{
+
+    }
+
+    #toggle:checked + ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        padding: 10px 0;
+        margin: 10px 0;
+    }
+    #toggle:checked + ul li{
+        background-color: rgb(237, 242, 254);
+        z-index: 5;
+    }
+    nav a{
+        
+    }
+    nav a:hover{
+        color: red;
+        font-style:italic;
+    }
+    p{
+        font-size: 25px;
+        -webkit-text-stroke: rgb(157, 199, 18) 1px;
+        font-family: 'Inter', sans-serif;
+        text-align: center;
+    }
+    .post{
+        visibility: hidden;
+    }
+    form{
+        width: 100%;
+        margin : 0 0 0 0;
+        text-align: center;
+        justify-content: space-around;
+        
+    }
+    .name-c{
+        width: 50%;
+        margin-left: 200px;
+        margin-top: 20px;
+        position:initial;
+    }
+    .mailc{
+        width: 50%;
+        margin-left: 200px;
+        margin-top: 20px;
+        position:initial;
+    }
+    textarea{
+        width: 50%;
+        margin-left: 200px;
+        margin-top: 20px;
+        position:initial;
+    }
 }
