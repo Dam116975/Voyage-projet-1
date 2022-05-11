@@ -2,6 +2,8 @@
     margin:0;
     padding: 0;
     list-style: none;
+}
+body{
     background-color: rgb(237, 242, 254);
 }
 a{
@@ -9,11 +11,17 @@ a{
     color: inherit;
 }
 
+h2{
+    font-size: 60px;
+    font-family: 'Inter', sans-serif;
+    text-align: center;
+    color: black;
 
+}
 /*nav*/
 #page{
     padding-top: 30px;
-    height: 100px;
+    height: 150px;
     color: rgb(178, 18, 162);
 }
  
@@ -25,7 +33,7 @@ a{
 
 }
 #page ul li{
-    margin: 0px 10px 0 0px;
+    margin: 0px 20px 0 0px;
 }
 #page a:hover{
     color: red;
@@ -39,12 +47,7 @@ label, #toggle
 .contact{
     width: 100%;
 }
-.contact, h2{
-    font-size: 60px;
-    font-family: 'Inter', sans-serif;
-    text-align: center;
-    margin-top: -20px;
-}
+
 p{
     margin-top: 0px;
     font-size: 35px;
@@ -75,7 +78,7 @@ p{
 }
 .form_buttons{
     position: absolute;
-    top: 40%;
+    top: 50%;
     left: 55%;
     transform: translate(-50%, -50%);
     width: 15%;
@@ -83,7 +86,7 @@ p{
     opacity: 1%;
 }
 .btn{
-    height: 95%;
+    height: 70%;
     width: 200%;
 }
     /*opacity: 1%;*/

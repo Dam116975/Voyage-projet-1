@@ -16,6 +16,7 @@ h2{
     font-family: 'Inter', sans-serif;
     text-align: center;
     color: black;
+   
 }
 /*nav*/
 #page{
@@ -46,9 +47,7 @@ label, #toggle
 .voyage{
     margin-top: -60px;
 }
-.voyage, h2{
-    margin-bottom: 40px;
-}
+
 .voyage, p{
     font-size: 40px;
     -webkit-text-stroke: rgb(157, 199, 18) 1px;
