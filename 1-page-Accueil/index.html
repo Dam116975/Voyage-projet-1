@@ -5,30 +5,37 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projet-1 : Carnet de voyage</title>
-    <link rel="stylesheet" href="../1-page-Accueil/styles.css">
+    <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Metamorphous&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@800&family=Metamorphous&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@800&family=Irish+Grover&family=Metamorphous&display=swap" rel="stylesheet">
+    <script src="script.js" defer></script>
 </head>
 <body>
     <section class="grid">
-        <nav class="content" id="page">
-            <label id="burg" for="toggle">☰</label>
-            <input type="checkbox" id="toggle">
-            <ul>
-                <li><a href="../2-page-Nous/indexPage2.html">Nous connaitre.</a></li>
-                <li><a href="../3-voyages/indexVoy.html">Voyages.</a></li>
-                <li><a href="../4-contact/indexCnt.html">Contact.</a></li>
-            </ul>
-        </nav>
-        <h1 id = "titre" class="content">Bienvenue sur mon carnet de bord</h1>
-        <p class="content" id="firstP">Sur ce site, vous allez pouvoir découvrir quelques destinations 
-            que nous avons beaucoup aimés.
-        </p>
-        <div class="imageAcc" class="content">
-            <img id="tag" src="../1-page-Accueil/1-page accueil/20191028_180136.jpg" alt="Harlem">
-        </div>
-        <footer></footer>
-</section>
+        <div class="essGrid title">
+            <nav class="navbar-desktop content" id="page">
+                <a class ="change title" href="../2-page-Nous/indexNous.html">Nous connaître</a>
+                <a class ="change title" href="../3-voyages/indexVoy.html">Voyages</a>
+                <a class ="change title" href="../4-contact/indexCnt.html">Contact</a>
+            </nav>
+            <nav class="navbar-mobil">
+                <label class="logo" for="toggle">☰</label>
+                <div class="nav-list-mob">
+                    <a class ="change title" href="../2-page-Nous/indexNous.html">Nous connaître</a>
+                    <a class ="change title" href="../3-voyages/indexVoy.html">Voyages</a>
+                    <a class ="change title" href="../4-contact/indexCnt.html">Contact</a>
+                </div>
+            </nav>
+            <div class = "titre1">
+                <h1 class = "title position" class="content">Bienvenue sur mon carnet de bord</h1>
+            </div>
+                <p class="effet content" id="firstP">Sur ce site, vous allez pouvoir découvrir quelques destinations 
+                    que nous avons beaucoup aimés.</p>
+            <div class="imageAcc" class="content">
+                <img id="tag" src="./photos/20190711_194737.jpg" alt="Harlem">
+            </div>
+           
+    </section>
 </body>
 </html>
