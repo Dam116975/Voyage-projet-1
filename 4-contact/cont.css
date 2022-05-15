@@ -2,6 +2,7 @@
     margin:0;
     padding: 0;
     list-style: none;
+    box-sizing: border-box;
 }
 body{
     background-color: rgb(237, 242, 254);
@@ -20,30 +21,56 @@ h2{
 
 }
 /*nav*/
-#page{
-    padding-top: 30px;
-    height: 70px;
+.navbar-desktop{
+    height: 80px;
+    line-height: 80px;
+    text-align: center;
+    grid-column: 2;
+    grid-row: 2;
+  }
+  .navbar-desktop a{
+    color: black;
+    font-weight: 800;
+    padding: 10px;
+    font-size: 30px;
     color: rgb(178, 18, 162);
-}
- 
-#page ul{
-    display: flex;
-    justify-content: center;
-    font-family: 'Inter', sans-serif;
-    font-size: 25px;
-
-}
-#page ul li{
-    margin: 0px 20px 0 0px;
-}
-#page a:hover{
-    color: red;
-    font-style:italic;
-}
-label, #toggle
-{
+  }
+  .navbar-mobil{
     display: none;
-}
+  }
+  .navbar-mobil, .logo{
+    z-index: 999;
+    font-size: 50px;
+    position: fixed;
+    top: 10px;
+    right: 15px;
+  }
+  .nav-list-mob{
+    position: fixed;
+    top: -550vh;
+    left: 0;
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    background-color: black;
+    transition: top 0.5;
+  }
+  .nav-list-mob a{     
+    color: whitesmoke;
+    font-weight: 800;
+    font-size: 20px;
+  }
+  
+  .list-visible{
+    top: 0;
+  }
+  .icon-visible{
+    color: blue;
+  }/*qui sommes nous*/
+
 /*page 4*/
 .contact{
     width: 100%;
@@ -68,7 +95,7 @@ p{
     
     width: 50%;
     position: absolute;
-    top: 70%;
+    top: 63%;
     left: 50%;
     transform: translate(-50%, -50%);
 
@@ -95,7 +122,7 @@ p{
 
 .name-c{
     position: absolute;
-    top: 68%;
+    top: 61%;
     left: 60%;
     transform: translate(-50%, -50%);
     height: 4%;
@@ -111,59 +138,62 @@ p{
 }
 textarea{
     position: absolute;
-    top: 67%;
+    top: 60%;
     left: 37%;
     transform: translate(-50%, -50%);
     height: 25%;
     width: 16%;
 }
 .info{
-    margin-top: 5000px;
+    position: absolute;
+    top: -86%;
+    left: 50%;
+    margin-top: 1000px;
     color: black;
+    font-size: 20px;
+    color: red;
 }
 /*mediaQ*/
 
-@media all and (max-width: 1450px){
-    #page{
-        margin: 0;
-        height: 60px;
-
-    }
-    #page ul{
-        display: none;
-        height: 220px;
-    }
-.contact, h2{
-    font-size: 200px;
-}
-    label{
-
-    }
-
-    #toggle:checked + ul {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        padding: 10px 0;
-        margin: 10px 0;
-    }
-    #toggle:checked + ul li{
-        background-color: rgb(237, 242, 254);
-        z-index: 5;
-    }
-    nav a{
-        
-    }
-    nav a:hover{
-        color: red;
-        font-style:italic;
-    }
-    p{
-        font-size: 25px;
-        -webkit-text-stroke: rgb(157, 199, 18) 1px;
-        font-family: 'Inter', sans-serif;
-        text-align: center;
-    }
+@media all and (max-width: 740px){
+        .nous {
+            text-align: center;
+            height: 100vh;
+            background-color: rgb(237, 242, 254);
+        }
+    /*nav*/
+    .navbar-desktop{
+          display: none;
+        }
+        .navbar-mobil{
+          display: block;
+        }
+        .nav-list-mob{
+          background-color: black;
+          border: 10px solid red;
+          height: 200px;
+          margin-top: 100px;
+        }
+        .navbar-mobil, .logo{
+            z-index: 999;
+            font-size: 50px;
+            position: fixed;
+            top: 10px;
+            right: 50px;
+          }
+        .titre2{
+            font-size: 30px;
+            margin: 0;
+            padding-top: 100px;
+            margin-bottom: 30px;
+        }
+        .secondP{
+            margin-top: 30px;
+            font-size: 20px;
+            padding: 0 30px;
+            color: blue;
+            -webkit-text-stroke: red 1px;
+        }
     .post{
         visibility: hidden;
     }
@@ -175,21 +205,37 @@ textarea{
         
     }
     .name-c{
-        width: 50%;
-        margin-left: 200px;
-        margin-top: 20px;
+        width: 70%;
+        height: 50px;
+        margin-left: 150px;
+        margin-top: 100px;
         position:initial;
     }
     .mailc{
-        width: 50%;
-        margin-left: 200px;
-        margin-top: 20px;
+        width: 70%;
+        height: 50px;
+        margin-left: 150px;
+        margin-top: 40px;
         position:initial;
     }
     textarea{
-        width: 50%;
-        margin-left: 200px;
-        margin-top: 20px;
+        width: 70%;
+        margin-left: 150px;
+        margin-top: 50px;
         position:initial;
+        height: 100px;
+    }
+    .btn{
+        height: 50px;
+      }
+      .form_buttons{
+        margin-top: 250px;
+        background-color: black;
+        height: 0;
+        left: 35%;
+        opacity: 999%;
+    }
+    .info{
+        visibility: hidden;
     }
 }

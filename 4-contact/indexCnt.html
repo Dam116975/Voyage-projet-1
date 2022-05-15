@@ -9,26 +9,31 @@
     <link href="https://fonts.googleapis.com/css2?family=Metamorphous&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@800&family=Metamorphous&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@800&family=Irish+Grover&family=Metamorphous&display=swap" rel="stylesheet">
+    <script src="../1-page-Accueil/script.js" defer></script>
 </head>
 <body>
     <section class="contact">
-        <nav class="content" id="page">
-            <label id="burg" for="toggle">☰</label>
-            <input type="checkbox" id="toggle">
-            <ul>
-                <li><a href="../1-page-Accueil/index.html">Accueil</a></li>
-                <li><a href="../2-page-Nous/indexPage2.html">Nous connaitre.</a></li>
-                <li><a href="../3-voyages/indexVoy.html">Voyages<a></a></li>
-            </ul>
-        </nav>
-        <h2 class="page4">Contact</h2>
-        <p>Si vous avez envie d'échanger avec nous n'hésitez pas a nous retourner le formulaire ci-dessous</p>
+        <div class="essGrid title">
+            <nav class="navbar-desktop content" id="page">
+                <a class ="change title" href="../1-page-Accueil/index.html">Accueil</a>
+                <a class ="change title" href="../2-page-Nous/indexNous.html">Nous connaître</a>
+                <a class ="change title" href="../3-voyages/indexVoy.html">Voyages</a>
+            </nav>
+            <nav class="navbar-mobil">
+                <label class="logo" for="toggle">☰</label>
+                <div class="nav-list-mob">
+                    <a class ="change title" href="../1-page-Accueil/index.html">Accueil</a>
+                    <a class ="change title" href="../2-page-Nous/indexNous.html">Nous connaître</a>
+                    <a class ="change title" href="../3-voyages/indexVoy.html">Voyages</a>                </div>
+            </nav>
+        <h2 class="page4 titre2">Contact</h2>
+        <p class="secondP">Si vous avez envie d'échanger avec nous n'hésitez pas a nous retourner le formulaire ci-dessous</p>
          <form class="post-cont">
              <div class="cassB">
                 <img class="post" src="../4-contact/4-photos/carteTimbre2.png" alt="postcard">
             <div class="taille"></div>
                 <a class="form_buttons" href="damien.bot@sncf.fr" data-type="submit">
-                    <input class ="btn" type="button" value="Bouton cliquer"></a>
+                    <input class ="btn" type="button" value="Envoy"></a>
                 </div>
             </div>             
                     <input class = "name-c" type="text" id="name" name="user_name" placeholder="Nom.">
@@ -37,10 +42,10 @@
                     <input class = "mailc" type="email" id="mail" name="user_mail" placeholder="E-mail."> 
                
                     <textarea id="msg" name="user_message" placeholder="Taper votre méssage ici."></textarea>                                                     
-                
+                    <p class="info">Pour envoyer votre courrier, cliqué sur le timbre</p>    
             
         </form>
-        <p class="info">Pour envoyer votre courrier, cliqué sur le lien</p>
+
 </section>
 </body>
 </html>

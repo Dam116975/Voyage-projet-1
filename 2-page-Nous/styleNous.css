@@ -112,9 +112,12 @@ h2{
     .titre2{
         font-size: 30px;
         margin: 0;
-    }
-    .titre2D{
         padding-top: 100px;
+    }
+    .corps{
+
+    
+        margin-bottom: 30px;
     }
     .secondP{
         margin-top: 30px;
@@ -122,6 +125,7 @@ h2{
         color: blue;
         -webkit-text-stroke: red 1px;
     }
+
 }
 
 
