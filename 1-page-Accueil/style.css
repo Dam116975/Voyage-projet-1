@@ -61,7 +61,7 @@
     color: black;
     font-weight: 800;
     padding: 10px;
-    font-size: 30px;
+    font-size: 25px;
     color: rgb(178, 18, 162);
   }
   .navbar-mobil{
@@ -117,13 +117,15 @@
 /*paragraphe*/
 #firstP{
     font-family: 'Irish Grover', cursive;
-    font-size: 40px;
+    font-size: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
     grid-column: 2;
-    grid-row: 3;
+    grid-row: 2;
+    margin-top: 120px;
+    color: rgb(37, 19, 116);
 }
 /*img*/
 .imageAcc{
@@ -142,7 +144,7 @@
 
 
   /*media*/
-  @media screen and (max-width : 1450px) {
+  @media screen and (max-width : 740px) {
 
       .essGrid {
           display: block;
@@ -171,6 +173,7 @@
       font-size: 20px;
       text-align: center;
       margin-bottom: 15px;
+      margin-top: -50px;
   }
   /*img*/
 .imageAcc{

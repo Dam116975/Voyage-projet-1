@@ -8,60 +8,61 @@ a{
 }
 
 h2{
-    font-size: 60px;
-    font-family: 'Inter', sans-serif;
-    text-align: center;
+  font-size: 40px;
+  font-family: 'Inter', sans-serif;
+  text-align: center;
+  color: black;
 }
 /*nav*/
 .navbar-desktop{
-    height: 80px;
-    line-height: 80px;
-    text-align: center;
-    grid-column: 2;
-    grid-row: 2;
-  }
-  .navbar-desktop a{
-    color: black;
-    font-weight: 800;
-    padding: 10px;
-    font-size: 30px;
-    color: rgb(178, 18, 162);
-  }
-  .navbar-mobil{
-    display: none;
-  }
-  .navbar-mobil, .logo{
-    z-index: 999;
-    font-size: 50px;
-    position: fixed;
-    top: 10px;
-    right: 15px;
-  }
-  .nav-list-mob{
-    position: fixed;
-    top: -550vh;
-    left: 0;
-    width: 100%;
-    height: 50vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    text-align: center;
-    background-color: black;
-    transition: top 0.5;
-  }
-  .nav-list-mob a{     
-    color: whitesmoke;
-    font-weight: 800;
-    font-size: 20px;
-  }
-  
-  .list-visible{
-    top: 0;
-  }
-  .icon-visible{
-    color: blue;
-  }/*qui sommes nous*/
+  height: 80px;
+  line-height: 80px;
+  text-align: center;
+  grid-column: 2;
+  grid-row: 2;
+}
+.navbar-desktop a{
+  color: black;
+  font-weight: 800;
+  padding: 10px;
+  font-size: 20px;
+  color: rgb(178, 18, 162);
+}
+.navbar-mobil{
+  display: none;
+}
+.navbar-mobil, .logo{
+  z-index: 999;
+  font-size: 50px;
+  text-align: end;
+  top: 10px;
+  right: 15px;
+}
+.nav-list-mob{
+  position: fixed;
+  top: -550vh;
+  left: 0;
+  width: 100%;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: center;
+  background-color: black;
+  transition: top 0.5;
+}
+.nav-list-mob a{     
+  color: whitesmoke;
+  font-weight: 800;
+  font-size: 20px;
+}
+
+.list-visible{
+  top: 0;
+}
+.icon-visible{
+  color: blue;
+}/*qui sommes nous*/
 .nous{
     width: 100%;
     height: 915px;
@@ -69,13 +70,12 @@ h2{
 }
 /*titre*/
 .secondP{
-    font-size: 40px;
-    -webkit-text-stroke: rgb(157, 199, 18) 1px;
-    font-family: 'Inter', sans-serif;
-    text-align: center;
-    width: 100%;
-    line-height: 100px;
-    line-height: 2.4;
+  font-size: 30px;
+  color: rgb(37, 19, 116);
+  font-family: 'Inter', sans-serif;
+  text-align: center;
+  margin: 0 50px;
+  line-height: 60px;
 
 }
 
@@ -90,25 +90,26 @@ h2{
 
 
 
-@media screen and (max-width : 1450px){
+@media screen and (max-width : 740px){
+
     .nous {
         width: 100%;
-        height: 100vh;
+        height: 130vh;
         background-color: rgb(237, 242, 254);
     }
 /*nav*/
 .navbar-desktop{
-      display: none;
-    }
-    .navbar-mobil{
-      display: block;
-    }
-    .nav-list-mob{
-      background-color: black;
-      border: 10px solid red;
-      height: 200px;
-      margin-top: 100px;
-    }
+  display: none;
+}
+.navbar-mobil{
+  display: block;
+}
+.nav-list-mob{
+  background-color: black;
+  border: 10px solid red;
+  height: 200px;
+  margin-top: 100px;
+}
     .titre2{
         font-size: 30px;
         margin: 0;

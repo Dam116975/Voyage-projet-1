@@ -41,7 +41,7 @@ function animateTitle(selector){
         span.style.animationDelay = (K * .1) + "s"
     })
 }
-//entourer chaque mot de double span
+
 function wrapWord (word) {
     const span = document.createElement("span");
     const span2 = document.createElement("span");
@@ -50,8 +50,6 @@ function wrapWord (word) {
     span2.innerHTML = word
     return span
 }
-//fonction générique
-//arr = tableau d'element et element = element a injecter entre chaque elements du tableau
 function injectElementBetweenItems(arr, element){
     // return node
     return arr.map((item, K) => {
@@ -65,7 +63,6 @@ function injectElementBetweenItems(arr, element){
    })
 }
 animateTitle(".title");
-//menu burger
 
 //1-clique icon ouvre le menu déroulant
 //on selectionne les elements pour les stocker dans une variable

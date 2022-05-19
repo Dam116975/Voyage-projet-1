@@ -11,18 +11,17 @@ a{
 }
 
 .faroT{
-  font-size: 60px;
+  font-size: 40px;
   font-family: 'Inter', sans-serif;
   text-align: center;
 }
 .faroh3{
-  font-size: 40px;
-  -webkit-text-stroke: rgb(157, 199, 18) 1px;
+  font-size: 30px;
+  color: rgb(37, 19, 116);
   font-family: 'Inter', sans-serif;
   text-align: center;
   width: 100%;
   line-height: 100px;
-  margin-top: 20px;
 }
 /*carroussel*/
 .pic-ctn {
@@ -61,69 +60,69 @@ a{
 .pic-ctn > img {
   position: absolute;
   top: 500px;
-  margin-top: -290px;
-  left: calc(30%);
+  margin-top: -360px;
+  left: calc(25%);
   opacity: 0;
   animation: display 10s infinite;
 }
-img:nth-child(1) {
+.animation:nth-child(1) {
   animation-delay: 2s;
-  width: 40%;
+  height: 72%;
+
 }
-img:nth-child(2) {
+.animation:nth-child(2) {
   animation-delay: 2s;
-  width: 40%;
+  height: 72%;
+
 }
-img:nth-child(3) {
+.animation:nth-child(3) {
   animation-delay: 4s;
-  width: 40%;
+  height: 72%;
 
 }
-img:nth-child(4) {
+.animation:nth-child(4) {
   animation-delay: 6s;
-  width: 40%;
+  height: 72%;
+
 
 }
-img:nth-child(5) {
+.animation:nth-child(5) {
   animation-delay: 8s;
-  width: 40%;
+  height: 72%;
 
 }
 /*mon avis*/
 
 .avis{
   display: flex;
-  justify-content:center;
+  justify-content: center;
   align-items: center;
   width: 100%;
   color: rgb(178, 18, 162);
-  
+  margin-top: 5000px;
+  text-align: center;
 }
 h4{
-  font-size: 40px;
+  margin-top: -200px;
+  font-size: 30px;
   margin-bottom: 50px;
   color: blue;
 }
-.avis div{
 
-  text-align: center;
-}
 .pas-aime{
-margin : 0 300px;
+margin : 0 60px;
 }
 .avis, p{
   margin-top: 15px;
-  font-size: 30;
+  font-size: 20;
 }
-.reverse{
-margin-top: 100px;
-width: 50%;
-}
-.retour{
 
-  width: 100%;
+.retour{
+  margin-top: 20px;
+display: flex;
+height: 50px;
 }
-@media screen and (max-width : 1450px) {
+@media screen and (max-width : 760px) {
   .faroT{
     margin-top: 50px;
     font-size: 30px;
@@ -142,32 +141,33 @@ width: 50%;
     top: 550px;
     left: calc(15%);
   }
-  img:nth-child(1) {
+  .animation:nth-child(1) {
     animation-delay: 2s;
     width: 70%;
   }
-  img:nth-child(2) {
+  .animation:nth-child(2) {
     animation-delay: 2s;
     width: 70%;
   }
-  img:nth-child(3) {
+  .animation:nth-child(3) {
     animation-delay: 4s;
     width: 70%;
   
   }
-  img:nth-child(4) {
+  .animation:nth-child(4) {
     animation-delay: 6s;
     width: 70%;
   
   }
-  img:nth-child(5) {
+  .animation:nth-child(5) {
     animation-delay: 8s;
     width: 70%;
   }
   .avis{
     display: block;
-    margin-top: 150px;
+    margin-top: 400px;
     text-align: center;
+    height: 1200px;
     
   }
   .reverse{
@@ -184,5 +184,11 @@ width: 50%;
   }
   .avis p{
     margin-bottom: 20px;
+  }
+  .retour{
+    width: 50%;
+    height: 60px;
+    margin-top: -300px;
+
   }
 }
